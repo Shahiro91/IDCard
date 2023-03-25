@@ -1,0 +1,147 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/simple-white-brick-wall-light-gray-shades-seamless-pattern-surface-texture-background-banner-wide-panorama-format-simple-137027626.jpg);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(93.65deg, #010101 26.71%, #b71c9a 64.37%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+    font-family: 'Mate SC', serif;
+}
+
+
+.roller {
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+#spare-time {
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+
+}
+
+.roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: -4rem;
+    }
+
+    50% {
+        top: -8rem;
+    }
+
+    72.5% {
+        top: -12.25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #F1FAEE;
+        font-size: 2.125rem;
+    }
+
+    .roller {
+        height: 2.6rem;
+        line-height: 2.125rem;
+    }
+
+    #spare-time {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .roller #rolltext {
+        animation: slide-mob 5s infinite;
+    }
+
+    @keyframes slide-mob {
+        0% {
+            top: 0;
+        }
+
+        25% {
+            top: -2.125rem;
+        }
+
+        50% {
+            top: -4.25rem;
+        }
+
+        72.5% {
+            top: -6.375rem;
+        }
+    }
+}
+
+a {
+    margin-left: 40%;
+    font-family: 'Mate SC', serif;
+    font-weight: 400;
+    color: #000000;
+    padding: 2%;
+    border: solid;
+    border-color: #000000;
+    border-radius: 10%;
+    background-color: #b71c9a;
+    text-decoration: none;
+}
+
+img {
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+a:hover {
+    font-family: 'Mate SC', serif;
+    font-weight: 400;
+    color: #fffefe;
+    padding: 2%;
+    border: solid;
+    border-color: #000000;
+    border-radius: 10%;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+.right {
+    max-width: 60%;
+    margin-right: 5%;
+}
